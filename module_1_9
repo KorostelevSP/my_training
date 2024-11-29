@@ -1,0 +1,23 @@
+# "Строки и индексация строк"
+
+# 1
+example = "мама сказала сходить в магазин"
+
+# 2
+print(example[0])
+
+# 3
+print(example[-1])
+
+# 4
+countch = len(example)
+countch2 = int(countch / 2);
+if len(example[int(countch2):-1]) % 2 == 0:
+    countch2 -= 1
+print(example[int(countch2):-1])
+
+# 5
+print(''.join(reversed(example)))
+
+# 6
+print(example[1:-1:2])
